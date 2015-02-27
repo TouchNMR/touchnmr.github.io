@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>User Guide of Touch NMR</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/unicorn.main.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<div id="header">
+			<h1><a href="http://www.drkaka.com/">www.drkaka.com</a></h1>		
+		</div>
+		
+		<div id="sidebar">
+			<ul>
+		   	 	<li><a href="./userguide.html">System requirements</a></li>
+           	 	<li><a href="./start_up.html">Start up</a></li>
+           	 	<li><a href="./wifi_transmission.html">WIFI transmission</a></li>
+		   	 	<li><a href="./dropbox.html">Dropbox</a></li>
+		   	 	<li><a href="./file_operation.html">File operation</a></li>
+		   	 	<li><a href="./resource_management.html">Resource management</a></li>
+		   	 	<li><a href="./switch_workspaces.html">Switch workspaces</a></li>
+		   	 	<li><a href="./print_operation.html">Print operation</a></li>
+		   	 	<li><a href="./cursor_operation.html">Cursor operation</a></li>
+		   	 	<li><a href="./actions.html">Actions</a></li>
+		   	 	<li><a href="./fittings.html">Fittings</a></li>
+		   	 	<li><a href="./fid_operation.html">FID operation</a></li>
+				<li><a href="./view_control.html">View control</a></li>
+				<li><a href="./spectrum_operation.html">Spectrum operation</a></li>
+				<li><a href="./2d_operation.html">2D operation</a></li>
+				<li><a href="./parameter_list.html">Parameter list</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="content-header">
+			 	<h1>User Guide of Touch NMR</h1>
+			</div>
+ 
+			<!--start of section 13-->           
+			<div class="breadcrumb">
+				<a href="#" class="current">FID operation</a>
+			</div>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+						If users click "View FID", the view will be switched to the FID operation interface. As is shown in figure 24.<br>
+ 
+						<img src="./figures_v20/f024.jpg" alt=""  class="text-picture"><br>
+						<span class="pictext">Figure 24</span><br>
+						This interface displays the current FID content.(If current data is arrayed spectrums, the displaying FID will be the first one.) The number of points is FFT transform number (may be filled with zero). The green line is at the zero value position. Click the "Settings" icon, you will enter the FID operation interface, shown in figure 25.<br>
+						
+						<img src="./figures_v20/f025.jpg" alt=""  class="text-picture"><br>
+						<span class="pictext">Figure 25</span><br>
+						In this view, users can accomplish various operations for the FID. Users can select the FFT transform points in the first row. Click the row to enter the interface shown in figure 26.<br>
+						
+						<img src="./figures_v20/f026.jpg" alt=""  class="text-picture"><br>
+						<span class="pictext">Figure 26</span><br>
+						Due to memory restriction, this app has built in 13 kinds of point selections. Users can choose from 32 to 128K. There will be a warning of "May be cut off" for the point number which is less than FID points.<br>
+						FID can be moved by "FID offset". A positive number means shifting to the left, the negative means shifting to the right.<br>
+						"First point factor" can be multiplied to the first point of FID. The coefficient is input by users.<br>
+						If the baseline position of FID is not zero. Users can turn on "Drifting correction" to make a correction.<br>
+						After the FFT transform, "FFT control" can reverse the whole data points. Users can also choose to switch the left part of points with the right.<br>
+						Click the "Windows" icon located on the upper right corner, you can add window functions to FID data. As is shown in figure 27.<br>
+						
+						<img src="./figures_v20/f027.jpg" alt=""  class="text-picture"><br>
+						<span class="pictext">Figure 27</span><br>
+						Windows functions is to operate on the whole FID data. Green lines represent the current window shape. Users can click the cell to choose whether to add a certain window function to FID data. Users can also configurate parameters for each window function. Click the "Blue arrow" associated to right side of the cell, users will enter the configuration view of that window function. As is shown in figure 28.<br>
+						
+						<img src="./figures_v20/f028.jpg" alt=""  class="text-picture"><br>
+						<span class="pictext">Figure 28</span><br>
+						Sliding the slider bar to change the shape of the window function. If the value exceeds the slider range, users can click the number area to tap in a new value. Then the slider's range will change accordingly.<br>
+						When all operations are finished, users can click the "Apply" icon located on the upper right corner. Then all operations will be applied to FID and the spectrum data will be recalculated. If you do not want to keep the current operation, you can click "Back" button on the upper left corner. In this case no operation will be applied.<br>
+					</div>
+				</div>
+			</div>
+			<!--end of section 13-->
+			<div class="pre-next"><a href="./fittings.html">Pre</a> | 12 | <a href="./view_control.html">Next</a></div>
+		</div>
+			
+		<div class="row-fluid">
+			<div id="footer" class="spanfooter">
+				2010-2015 www.drkaka.com
+			</div>
+		</div>
+
+	</body>
+</html>
